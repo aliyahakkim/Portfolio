@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Aliya Hakkim, Electronics and Communication Engineering Student">
+    <title>Aliya Hakkim | Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Tech Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <header class="header">
+        <a href="#home" class="logo">Aliya<span class="highlight">.</span></a>
+        
+        <nav class="navbar">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#contact" class="nav-link contact-btn">Contact Me</a>
+        </nav>
+
+        <div class="menu-icon" id="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <span class="greeting">Hello, I'm</span>
+                <h1 class="hero-name">Aliya Hakkim</h1>
+                <h2 class="hero-title">Electronics & Communication <span class="text-gradient">Engineer</span></h2>
+                <p class="hero-description">
+                    Electronics & Communication Engineering student with hands-on experience in Embedded Systems, IoT, and Computer Vision.
+                </p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">Let's Talk <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                    <a href="#" class="btn btn-tertiary" download><i class="fa-solid fa-download"></i> Resume</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="blob-wrapper">
+                    <div class="blob"></div>
+                </div>
+                <div class="profile-frame">
+                    <div class="orbit-ring orbit-1"></div>
+                    <div class="orbit-ring orbit-2"></div>
+                    <div class="profile-img-container">
+                        <img src="profile.jpg" alt="Aliya Hakkim" class="profile-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400';">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <h2 class="section-title">About Me</h2>
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-card">
+                        <h3>Who I Am</h3>
+                        <p>I am an Electronics and Communication Engineering student with hands-on experience in embedded systems and IoT-based development using ESP32 and Arduino. I specialize in sensor interfacing, wireless communication, and hardware-software integration.</p>
+                        <p>My work involves designing automated circuits, developing custom wireless security testing devices, and applying computer vision models to real-world projects. I love building smart systems and delivering technical training to help others learn robotics, drones, and 3D printing.</p>
+                    </div>
+                </div>
+                
+                <div class="about-focus-grid">
+                    <div class="focus-card">
+                        <i class="fa-solid fa-microchip"></i>
+                        <h3>Embedded & IoT</h3>
+                        <p>Designing real-time automation solutions, sensor nodes, and communication interfaces using ESP32 and Arduino.</p>
+                    </div>
+                    <div class="focus-card">
+                        <i class="fa-solid fa-eye"></i>
+                        <h3>Computer Vision</h3>
+                        <p>Integrating YOLO deep learning models and OpenCV for object detection and visual drone navigation.</p>
+                    </div>
+                    <div class="focus-card">
+                        <i class="fa-solid fa-cubes"></i>
+                        <h3>Hardware Integration</h3>
+                        <p>Prototyping mechanical components using 3D printing and integrating them with custom analog/digital circuits.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section education">
+            <h2 class="section-title">Education</h2>
+            <div class="container timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="date">2024 - Present</div>
+                        <h3>Bachelor of Technology (B.Tech)</h3>
+                        <h4>Electronics & Communication Engineering</h4>
+                        <p><strong>Sree Buddha College of Engineering</strong> (Affiliated to APJ Abdul Kalam Technological University - KTU), Alappuzha, Kerala.<br>
+                        Acquiring theoretical depth and practical mastery in subjects including Signals & Systems, Analog Electronics, VLSI Design, and Embedded Controllers. Actively participating in technical labs and research projects.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="date">2022 - 2024</div>
+                        <h3>Higher Secondary School</h3>
+                        <h4>Physics, Chemistry & Mathematics</h4>
+                        <p>Completed pre-university education with top marks, laying a solid foundation in scientific principles and mathematics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills">
+            <h2 class="section-title">Technical & Professional Skills</h2>
+            <div class="container">
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fa-solid fa-microchip"></i> Hardware & Embedded</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Embedded Systems (Arduino, ESP32)</span>
+                            <span class="skill-tag">Circuit Design & Prototyping</span>
+                            <span class="skill-tag">Hardware-Software Integration</span>
+                            <span class="skill-tag">Network Scanning & Device Detection</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fa-solid fa-code"></i> Software & CV</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">Computer Vision (YOLO, OpenCV)</span>
+                            <span class="skill-tag">Git & Version Control</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fa-solid fa-briefcase"></i> Professional & Management</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Team Leadership & Coordination</span>
+                            <span class="skill-tag">HR & Financial Coordination</span>
+                            <span class="skill-tag">Analytical Problem Solving</span>
+                            <span class="skill-tag">Project Planning & Execution</span>
+                            <span class="skill-tag">Adaptability & Quick Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="container">
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fa-solid fa-wifi"></i>
+                        </div>
+                        <h3>Wi-Fi & Bluetooth Security Tester</h3>
+                        <p>Developed a wireless security testing device powered by ESP32. Features active network scanning, signal level assessment, and device detection algorithms for cybersecurity evaluation.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">ESP32</span>
+                            <span class="project-tag">C++</span>
+                            <span class="project-tag">Network Scanning</span>
+                            <span class="project-tag">IoT Security</span>
+                        </div>
+                        <a href="https://github.com" target="_blank" class="project-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <h3>YOLO Vision drone platform</h3>
+                        <p>Integrated YOLO object recognition with OpenCV scripts. Designed intelligent processing loops capable of classifying and counting assets during flight simulator validation.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">YOLO</span>
+                            <span class="project-tag">OpenCV</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Drone Technology</span>
+                        </div>
+                        <a href="https://github.com" target="_blank" class="project-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <h3>Sensor-Automated Smart System</h3>
+                        <p>Designed and built embedded systems with sensors interfaced via I2C/SPI to ESP32/Arduino microcontrollers. Combined physical circuit boards with CAD designed and 3D printed frames.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Arduino</span>
+                            <span class="project-tag">ESP32</span>
+                            <span class="project-tag">3D Printing</span>
+                            <span class="project-tag">Sensor Interfacing</span>
+                        </div>
+                        <a href="https://github.com" target="_blank" class="project-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="container timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="date">2024 - Present</div>
+                        <h3>Electronics Design Intern</h3>
+                        <h4>Sastra Global Business Innovation</h4>
+                        <p>Engaged in circuit schematic design, PCB layout routing, and hardware prototyping for digital and analog systems. Actively involved in component selection, simulation, and troubleshooting prototype boards for industrial applications.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="date">2024 - Present</div>
+                        <h3>Embedded System & IoT Student Developer</h3>
+                        <h4>Smart IoT Development</h4>
+                        <p>Developed specialized Wi-Fi and Bluetooth security verification hardware based on ESP32 microcontrollers. Designed multi-sensor controller configurations for custom smart automation. Facilitated training programs for robotics students, providing guidance on YOLO object detection pipelines, quadcopter flight control, and 3D print modeling.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="date">2024 - Present</div>
+                        <h3>HR & Finance Officer</h3>
+                        <h4>Nuke Labs</h4>
+                        <p>Led personnel management actions including recruiting coordination, staff onboarding, and general developer assignment. Maintained records for project tracking, resource allocation budgets, and periodic accounting checks.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="date">2024</div>
+                        <h3>Ideathon Winner</h3>
+                        <h4>KTU Startup Cell</h4>
+                        <p>Recognized as a winner of the KTU Startup Cell Ideathon competition for an innovative hardware/software design solution built at Sree Buddha College of Engineering.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="container contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>aliyahakkim580@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 9526598580</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Alappuzha, Kerala, India</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/aliya-hakkim-b63279339/" target="_blank" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="input-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Aliya Hakkim. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
